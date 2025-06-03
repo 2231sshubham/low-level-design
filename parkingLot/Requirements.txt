@@ -1,0 +1,32 @@
+PARKING LOT
+
+Requirements:
+1. The parking lot should've multiple floors, and each floor should've multiple parking spots.
+2. The parking lot should be able to park different types of vehicles like car,bike,truck etc.
+3. Individual parking spot should be assigned to only a specific type of vehicle, it shouldn't be generic.
+4. A parking spot should be reserved on the entry of the vehicle and relieved on it's exit.
+5. The system should be aware of available parking spots at any point in time.
+6. Parking lot should handle multiple entry and exit points and support concurrent entry and exit of vehicles.
+
+Entities:
+1. Parking Lot
+2. Parking floor
+3. Parking space/spot
+4. Vehicle
+5. Ticket
+
+Responsibilities:
+	Parking Lot:
+		1. Enable parking/unparking of vehicles
+		2. Distribute and maintain ticket
+		3. Collect parking fee
+	Parking floor:
+		1. Is a substructure of parking lot - 1 level
+		2. Contains parking spots
+	Parking Spot:
+		1. Park specific type of vehicle
+		2. Tell if available
+	Vehicle:
+		1. Park/unpark in/from parking spot
+		2. Get ticket
+		3. Pay fees
