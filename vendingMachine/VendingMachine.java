@@ -43,6 +43,23 @@ public class VendingMachine {
         totalPayment += note.value;
     }
 
+
+    public void chooseProduct(Product product){
+        currentState.chooseProduct(product);
+    }
+    public void insertCoin(Coin coin){
+        currentState.insertCoin(coin);
+    } 
+    public void insertNote(Note note){
+        currentState.insertNote(note);
+    }
+    public void dispenseProduct(){
+        currentState.dispenseProduct();
+    }
+    public void returnChange(){
+        currentState.returnChange();
+    }
+
     public Inventory getInventory(){ return inventory;}
     public IdleState getIdleState(){ return idleState;}
     public ReadyState getReadyState(){return readyState;}

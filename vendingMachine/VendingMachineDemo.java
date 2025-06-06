@@ -14,10 +14,10 @@ public class VendingMachineDemo {
         inventory.addProduct(milk, 10);
         inventory.addProduct(eggs, 1);
 
-        vendingMachine.getCurrentState().chooseProduct(eggs);
-        vendingMachine.getCurrentState().insertCoin(Coin.Twenty); vendingMachine.getCurrentState().insertNote(Note.Fifty);
-        vendingMachine.getCurrentState().dispenseProduct();
-        vendingMachine.getCurrentState().returnChange();
+        vendingMachine.chooseProduct(eggs);
+        vendingMachine.insertCoin(Coin.Twenty); vendingMachine.insertNote(Note.Fifty);
+        vendingMachine.dispenseProduct();
+        vendingMachine.returnChange();
 
         vendingMachine.getCurrentState().chooseProduct(eggs);
         // vendingMachine.getCurrentState().chooseProduct(eggs);

@@ -14,7 +14,7 @@ public class Inventory {
         productInventory.put(product, productInventory.getOrDefault(product, 0)+quantity);
     }
 
-    public void updateQuantity(Product product, int quantity){
+    public synchronized void updateQuantity(Product product, int quantity){
         productInventory.put(product, quantity);
     }
 
