@@ -17,6 +17,6 @@ public class TrafficSignal {
         }
         
         TrafficInterface trafficSignal = new TrafficInterface(signals, signalStateDurations);
-        trafficSignal.start(Direction.NORTH);
+        trafficSignal.start(Direction.SOUTH);
     }
 }
